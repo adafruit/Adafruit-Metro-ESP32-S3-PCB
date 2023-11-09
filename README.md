@@ -33,6 +33,8 @@ Features:
 * Low Power friendly! In deep sleep mode we can get down to ~100uA of current draw from the Lipoly connection. Quiescent current is from the power regulator, ESP32-S3 chip, and Lipoly monitor. Turn off the NeoPixel and external I2C power for the lowest quiescent current draw.
 * Works with ESP-IDF, Arduino or CircuitPython 
 
+<b>As of Nov 8, 2023</b> - We've fixed this hardware to be revision B which has changed the NeoPixel pin and the SPI/SD card pins to no longer use the same pins as the octal PSRAM. Which means that the hardware now works correctly when PSRAM is activated! If you have a rev A hardware board, contact support to get a replacement rev B.
+
 ### License
 
 Adafruit invests time and resources providing this open source design, please support Adafruit and open-source hardware by purchasing products from [Adafruit](https://www.adafruit.com)!
